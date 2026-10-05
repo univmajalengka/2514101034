@@ -1,1 +1,2 @@
-# 2514101034
+Nama  : Alika Rizqya Utami
+NPM   : 2514101034
