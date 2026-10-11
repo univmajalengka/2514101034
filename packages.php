@@ -1,0 +1,68 @@
+<?php
+$packages = [
+    'public-day' => [
+        'id' => 'public-day',
+        'type' => 'PUBLIC',
+        'name' => 'Open Trip Pendakian Sehari',
+        'duration' => '1 hari · tek-tok',
+        'days' => 1,
+        'schedule' => 'Sabtu atau Minggu',
+        'pricing' => 'per_person',
+        'price' => 275000,
+        'price_label' => 'Rp 275.000 / orang',
+        'included_people' => 1,
+        'extra_person_price' => 0,
+        'description' => 'Gabung dengan peserta lain. Cocok untuk pendaki solo dan pemula yang ingin didampingi guide.',
+        'itinerary' => 'Briefing di basecamp, pendakian bersama guide, istirahat di titik yang diizinkan, lalu turun di hari yang sama.',
+    ],
+    'public-camp' => [
+        'id' => 'public-camp',
+        'type' => 'PUBLIC',
+        'name' => 'Open Trip Camping',
+        'duration' => '2 hari 1 malam',
+        'days' => 2,
+        'schedule' => 'Akhir pekan · tanggal konfirmasi',
+        'pricing' => 'per_person',
+        'price' => 475000,
+        'price_label' => 'Rp 475.000 / orang',
+        'included_people' => 1,
+        'extra_person_price' => 0,
+        'description' => 'Perjalanan kelompok dengan satu malam berkemah di lokasi yang diizinkan pengelola.',
+        'itinerary' => 'Hari pertama pendakian dan berkemah di lokasi berizin. Hari kedua mengikuti arahan guide untuk perjalanan turun.',
+    ],
+    'private-day' => [
+        'id' => 'private-day',
+        'type' => 'PRIVATE',
+        'name' => 'Private Pendakian Sehari',
+        'duration' => '1 hari · tek-tok',
+        'days' => 1,
+        'schedule' => 'Pilih tanggal sendiri',
+        'pricing' => 'per_group',
+        'price' => 1200000,
+        'price_label' => 'Rp 1.200.000 / grup',
+        'included_people' => 4,
+        'extra_person_price' => 200000,
+        'description' => 'Guide khusus untuk rombongan sendiri. Tarif dasar untuk maksimal 4 peserta.',
+        'itinerary' => 'Briefing dan pendakian bersama guide pribadi. Jam mulai dan ritme perjalanan dibahas sebelum keberangkatan.',
+    ],
+    'private-camp' => [
+        'id' => 'private-camp',
+        'type' => 'PRIVATE',
+        'name' => 'Private Camping',
+        'duration' => '2 hari 1 malam',
+        'days' => 2,
+        'schedule' => 'Pilih tanggal sendiri',
+        'pricing' => 'per_group',
+        'price' => 1900000,
+        'price_label' => 'Rp 1.900.000 / grup',
+        'included_people' => 4,
+        'extra_person_price' => 350000,
+        'description' => 'Guide khusus untuk rombongan sendiri, dengan rencana camping di lokasi yang mendapat izin.',
+        'itinerary' => 'Hari pertama pendakian dan camping di lokasi berizin. Hari kedua turun bersama guide sesuai arahan pengelola.',
+    ],
+];
+
+$porterPricePerDay = 350000;
+$basecampPhone = '6281809807475';
+$basecampPhoneDisplay = '0818-0980-7475';
+$basecampMapUrl = 'https://www.google.com/maps/search/?api=1&query=Basecamp+gunung+tampomas+via+cibeureum';
