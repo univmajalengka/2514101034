@@ -1,18 +1,4 @@
 <?php
-mysqli_report(MYSQLI_REPORT_OFF);
-
-// Membuat koneksi ke database (sesuaikan setelah database dibuat)
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "database_name";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
-
 // Prosedur menghitung diskon berdasarkan total belanja
 function hitungDiskon($totalBelanja)
 {
@@ -59,7 +45,7 @@ $persen = $totalBelanja > 0 ? round($diskon / $totalBelanja * 100) : 0;
 
         <form method="post">
             <label for="total">Total Belanja (Rp)</label>
-            <input type="number" id="total" name="total" min="0" step="1000"
+            <input type="number" id="total" name="total" min="0" step="1"
                    value="<?= htmlspecialchars((string) $totalBelanja) ?>" required>
             <button type="submit">Hitung</button>
         </form>
